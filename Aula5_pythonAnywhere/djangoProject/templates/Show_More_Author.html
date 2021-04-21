@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+    <div class="container">
+
+        <h1 style="text-align: center;"> Author Profile </h1>
+        <div class="card">
+            <img src="https://i0.wp.com/www.gameshedge.com/wp-content/uploads/2020/05/Reislin.png?fit=646%2C847&ssl=1" alt="John" style="width:100%">
+            <h1>{{ author.name }}</h1>
+            <p class="title"> {{ author.email }}</p>
+            <p>ProfilePic - Demo</p>
+            <a class="ProfileA" href="#"><i class="fa fa-dribbble"></i></a>
+            <a class="ProfileA" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="ProfileA" href="#"><i class="fa fa-linkedin"></i></a>
+            <a class="ProfileA" href="#"><i class="fa fa-facebook"></i></a>
+            <p>
+                <a href="{{ request.path }}/books"> <button>Show Author's Books</button> </a>
+            </p>
+        </div>
+    </div>
+
+{% endblock %}
+

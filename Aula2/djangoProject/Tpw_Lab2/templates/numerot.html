@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{%  block content %}
+
+<h1>O seu número é:</h1>
+<h2>{{ num_arg }}</h2>
+<br />
+<p><b> Um marcador template simples: </b></p>
+
+{%  ifequal num_arg 1000 %}
+<p>O nome do valor é MIL</p>
+{% else %}
+<p>O nome do valor é Desconhecido</p>
+{% endifequal %}
+
+{%  endblock %}
+</body>
+</html>
