@@ -1,0 +1,19 @@
+
+<div>
+  <h2>New Author:</h2>
+  <div>
+    <div>
+      <label>ID:<input [(ngModel)]="author.id" placeholder="id" [ngModelOptions]="{standalone: true}"  ></label>
+    </div>
+  <div>
+    <label>Name:<input [(ngModel)]="author.name" placeholder="name"  [ngModelOptions]="{standalone: true}"></label>
+  </div>
+  <div>
+    <label>Email: <input [(ngModel)]="author.email" placeholder="email"  [ngModelOptions]="{standalone: true}"></label>
+  </div>
+  <br>
+    <button type="submit" (click)="createAuthor(author)" value="CREATE" > CREATE </button>
+  <!-- <button (click)="createAuthor()" > CREATE </button> -->
+  </div>
+</div>
+

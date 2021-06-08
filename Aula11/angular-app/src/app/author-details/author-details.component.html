@@ -1,0 +1,22 @@
+<h2>Author Details</h2>
+
+
+
+
+<div *ngIf="author">
+  <h2>Information on {{ author.name | uppercase }}</h2>
+  <div>
+    <label>Num:<input [ngModel]="author.id" readonly></label>
+  </div>
+  <div>
+    <label>Name:<input [(ngModel)]="author.name" placeholder="name"></label>
+  </div>
+  <div>
+    <label>Email: <input [(ngModel)]="author.email" placeholder="email"></label>
+  </div>
+  <br>
+  <button (click)="update()" > UPDATE </button>
+  <button (click)="delete()" > DELETE </button>
+  <button (click)="goBack()" > <= GO BACK </button>
+
+</div>

@@ -1,0 +1,8 @@
+<h2>Books List</h2>
+
+<!-- Books List -->
+<ul class="books">
+  <li *ngFor="let book of books" (click)="onSelect(book)">
+    <span class="badge">{{book.num}}</span> {{book.title}}  FROM {{ book.author.name }}
+  </li>
+</ul>
